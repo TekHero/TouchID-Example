@@ -15,6 +15,7 @@
 		D3190E361C46E29F001A344C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3190E341C46E29F001A344C /* LaunchScreen.storyboard */; };
 		D3190E411C46E29F001A344C /* TouchID_DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3190E401C46E29F001A344C /* TouchID_DemoAppTests.swift */; };
 		D3190E4C1C46E29F001A344C /* TouchID_DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3190E4B1C46E29F001A344C /* TouchID_DemoAppUITests.swift */; };
+		D3190E5A1C46E2B1001A344C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3190E591C46E2B1001A344C /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D3190E471C46E29F001A344C /* TouchID-DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchID-DemoAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3190E4B1C46E29F001A344C /* TouchID_DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchID_DemoAppUITests.swift; sourceTree = "<group>"; };
 		D3190E4D1C46E29F001A344C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3190E591C46E2B1001A344C /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3190E5A1C46E2B1001A344C /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		D3190E1C1C46E29F001A344C = {
 			isa = PBXGroup;
 			children = (
+				D3190E591C46E2B1001A344C /* LocalAuthentication.framework */,
 				D3190E271C46E29F001A344C /* TouchID-DemoApp */,
 				D3190E3F1C46E29F001A344C /* TouchID-DemoAppTests */,
 				D3190E4A1C46E29F001A344C /* TouchID-DemoAppUITests */,
@@ -404,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TouchID-DemoApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.TouchID-DemoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TouchID-DemoApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.TouchID-DemoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
